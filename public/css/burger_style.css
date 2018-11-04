@@ -1,0 +1,39 @@
+body {
+    background-color: lightcoral;
+    font-family: 'Krub', sans-serif;
+    font-size: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 960px;
+    text-align: center;
+}
+
+img {
+    width: 25%;
+}
+
+button {
+    font-family: 'Krub', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.not-eaten {
+    float: left;
+}
+
+.eaten {
+    float: right;
+}
+
+li {
+    padding: 5px;
+    margin: 5px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
