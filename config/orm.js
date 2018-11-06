@@ -7,14 +7,14 @@ var selectAll = function(cb) {
     connection.query(query, cb);
 };
 
-var insertOne = function(tableName, burgerName, cb) {
-    var query = "INSERT INTO ?? (burger_name) VALUES (??);";
-    connection.query(query, [tableName, burgerName], cb);
+var insertOne = function(burgerName, cb) {
+    var query = "INSERT INTO burgers (burger_name, devoured) VALUES ('??', false);";
+    connection.query(query, [burgerName], cb);
 };
 
-var updateOne = function(burgerName, cb) {
-    var query = "UPDATE burgers SET devoured = true WHERE ??;";
-    connection.query(query, [burgerName], cb);
+var updateOne = function(burgerId, cb) {
+    var query = "UPDATE burgers SET devoured = true WHERE id = '??';";
+    connection.query(query, [burgerId], cb);
 }
 
 

@@ -9,16 +9,16 @@ var burger = {
             cb(res)
         })
     },
-    insertOne: function(tableName, burgerName, cb) {
-        orm.insertOne(tableName, burgerName, function(err, res) {
-            if (err) {
-                throw err;
-            }
+    insertOne: function(burgerName, cb) {
+        orm.insertOne(burgerName, function(err, res) {
+            // if (err) {
+            //     throw err;
+            // }
             cb(res);
         })
     },
-    updateOne: function(burgerName, cb) {
-        orm.updateOne(burgerName, cb, function(err, res) {
+    updateOne: function(burgerId, cb) {
+        orm.updateOne(burgerId, cb, function(err, res) {
             if (err) {
                 throw err;
             }

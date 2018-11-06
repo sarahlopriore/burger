@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-color: lightcoral;
     font-family: 'Krub', sans-serif;
@@ -8,6 +12,7 @@ body {
     width: 100%;
     max-width: 960px;
     text-align: center;
+    margin: 0 auto;
 }
 
 img {
@@ -21,11 +26,15 @@ button {
 }
 
 .not-eaten {
-    float: left;
+    text-align: left;
+    display: inline-block;
+    margin: 10px;
 }
 
 .eaten {
-    float: right;
+    display: inline-block;
+    background-color: lightsalmon;
+    margin: 10px;
 }
 
 li {
